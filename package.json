@@ -1,0 +1,61 @@
+{
+  "name": "s07e01-atelier-okanban-front-kenshirosan",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "overrides": {
+    "rollup": "npm:@rollup/wasm-node"
+  },
+  "devDependencies": {
+    "eslint": "^9.1.1",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "@rollup/wasm-node": "^4.17.2",
+    "sortablejs": "^1.15.2"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "overrides": [
+      {
+        "files": "*.vue",
+        "options": {
+          "parser": "vue",
+          "vueIndentScriptAndStyle": true
+        }
+      },
+      {
+        "files": "*.js",
+        "options": {
+          "parser": "babel"
+        }
+      },
+      {
+        "files": "*.json",
+        "options": {
+          "parser": "json"
+        }
+      }
+    ],
+    "semi": true,
+    "requirePragma": false,
+    "proseWrap": "preserve",
+    "arrowParens": "avoid",
+    "htmlWhitespaceSensitivity": "css",
+    "quoteProps": "as-needed"
+  }
+}
